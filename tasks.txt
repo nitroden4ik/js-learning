@@ -1,0 +1,9 @@
+Write a program that takes an input of a year, and outputs whether it is a leap year or not.
+
+Write a program that takes an input of a grade (A, B, C, D, or F) and outputs its equivalent numeric score (4 for A, 3 for B, 2 for C, 1 for D, and 0 for F).
+
+Write a function that takes a string as an argument and returns "Yes" if the string is not empty, and "No" otherwise.
+
+Write a function that takes a temperature in Celsius as an argument and returns the equivalent temperature in Fahrenheit.
+
+Write a function that takes a number as an argument and returns "Even" if the number is even, and "Odd" otherwise.
