@@ -102,6 +102,7 @@ console.log(concatenateArray(myArray));
 
 //Write a program that takes an input of a character and outputs whether it is a vowel or a consonant.
 
+/*
 const vowels = ['e', 'u', 'i', 'o', 'a',];
 let userInput = prompt('Enter a character');
 let i = null
@@ -121,3 +122,19 @@ function checkCharacter(){
   }
 }
 checkCharacter()
+
+*/
+
+//Write a program that takes an input of a year, and outputs whether it is a leap year or not.
+
+
+function checkYear() {
+  let userInput = prompt('Enter a year');
+  return parseInt(userInput) % 100 === 0 ?  parseInt(userInput) % 400 === 0 : parseInt(userInput) % 4 === 0;
+  
+}
+
+alert(checkYear(userInput));
+
+
+
