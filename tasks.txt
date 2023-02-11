@@ -1,22 +1,24 @@
-Write a program that takes an input of a year, and outputs whether it is a leap year or not.
+a plus sign means done ++
 
-Write a program that takes an input of a grade (A, B, C, D, or F) and outputs its equivalent numeric score (4 for A, 3 for B, 2 for C, 1 for D, and 0 for F).
++ Write a program that takes an input of a year, and outputs whether it is a leap year or not.
 
-Write a function that takes a string as an argument and returns "Yes" if the string is not empty, and "No" otherwise.
++Write a program that takes an input of a grade (A, B, C, D, or F) and outputs its equivalent numeric score (4 for A, 3 for B, 2 for C, 1 for D, and 0 for F).
 
-Write a function that takes a temperature in Celsius as an argument and returns the equivalent temperature in Fahrenheit.
++Write a function that takes a string as an argument and returns "Yes" if the string is not empty, and "No" otherwise.
 
-Write a function that takes a number as an argument and returns "Even" if the number is even, and "Odd" otherwise.
++Write a function that takes a temperature in Celsius as an argument and returns the equivalent temperature in Fahrenheit.
+
++Write a function that takes a number as an argument and returns "Even" if the number is even, and "Odd" otherwise.
 
 
 ---------------------------------------------------------------
 Arrays and Array methods like map, filter, reduce, etc.
 ---------------------------------------------------------------
-Create an array of numbers and use the map method to square each number in the array.
++Create an array of numbers and use the map method to square each number in the array.
 
-Create an array of objects representing books and use the filter method to find all books with a certain author.
++Create an array of objects representing books and use the filter method to find all books with a certain author.
 
-Create an array of numbers and use the reduce method to find the sum of all the numbers.
++Create an array of numbers and use the reduce method to find the sum of all the numbers.
 
 Create an array of objects representing employees and use the sort method to sort the employees by their names in ascending order.
 
