@@ -241,3 +241,312 @@ const sum2 = numbers2.reduce((accumulator, currentValue) => accumulator + curren
 
 console.log(sum2); // Output: 25
 */
+
+/*Create an array of objects representing employees and use the sort method to sort the employees by their names in ascending order.
+
+
+const employees = [
+  {name: 'John'},
+  {name: 'Peter'},
+  {name: 'Ben'},
+  {name: 'Trevor'},  
+]
+employees.sort((a, b) => {
+  if (a.name < b.name) return -1;
+  if (a.name > b.name) return 1;
+  return 0;
+})
+
+*/
+//Create an array of numbers and use the forEach method to print the square of each number in the array.
+/*
+const numbers = [1, 2, 3, 4, 5];
+let squaredNumbers = numbers.map(element => element * element);
+
+squaredNumbers.forEach(element => {
+  
+  console.log(element)
+});
+
+*/
+
+/*Create an array of strings and use the includes method to check if a certain word is present in the array.
+let userInput = prompt('Enter a fruit')
+const myStrings = [
+  'banana',
+  'apple',
+  'watemelon',
+  'coconut',
+]
+
+if(myStrings.includes(userInput.toLowerCase())){
+  alert('yeah, its on the list')
+} else {
+  alert('nope')
+}
+
+*/
+
+/*Create an array of numbers and use the indexOf method to find the first occurrence of a certain number in the array.
+const numbers = [1, 2, 3, 4, 5];
+const target = 4;
+
+const index = numbers.indexOf(target);
+
+if(index !== -1){
+  alert(`the first occurance of ${target} is at ${index}`)
+} else {
+  alert('it is not in array')
+}
+*/
+
+/*Create an array of numbers and use the splice method to add a new number to the array.
+
+const numbers = [1, 2, 3, 4, 5];
+numbers.splice(5,0 ,6)
+console.log(numbers)
+
+*/
+
+/*Create an array of numbers and use the slice method to create a new array with the first n numbers of the original array.
+
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.splice(5, 0 , 6,7,8,9,)
+console.log(numbers)
+
+*/
+
+/*Create an array of numbers and use the concat method to merge two arrays into a single array.
+
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [6,7,8,9,10];
+
+let arrayConcat = array1.concat(array2);
+console.log(arrayConcat)
+*/
+/*Create a class for a basic shape (e.g. rectangle, square, circle) with properties for its width, height, and area.
+
+class rectangle {
+  constructor(width, height, area){
+    this.width = width;
+    this.height = height;
+    this.area = area;
+  }
+  get area() {
+    return this.width * this.height;
+  }
+}
+*/
+
+//Create a class for a person with properties for their name, age, and address.
+
+class person {
+  constructor(name, age, address){
+    this.name = name;
+    this.age = age;
+    this.address = address
+  }
+}
+//Create a class for a car with properties for its make, model, year, and color.
+
+class car {
+  constructor(made, model, year, color){
+    this.made = made;
+    this.model = model;
+    this.year = year;
+    this.color = color;
+  }
+}
+
+//Create a class for a bank account with properties for the account holder's name, account number, and balance.
+
+class bankAccount {
+  constructor(name, accNumber, balance){
+    this.name = name;
+    this.accNumber = accNumber;
+    this.balance = balance;
+  }
+}
+
+//Create a class hierarchy for different types of vehicles (e.g. car, truck, motorcycle) and implement methods for each vehicle type to perform unique actions such as honk, rev engine, pop a wheelie, etc.
+/*
+class Vehicle {
+  constructor(name, model, year){
+    this.name = name;
+    this.model = model;
+    this.year = year;
+  }
+
+  honk(){
+    console.log('Beep Beep!');
+  }
+}
+
+class Car extends Vehicle {
+  constructor(name, model, year, numDoors){
+    super(name, model, year)
+    this.numDoors = numDoors;
+  }
+  engineSound() {
+    console.log('Vroom vroom!');
+  }
+}
+
+class Truck extends Vehicle {
+  constructor(name, model, year, numWheels){
+    super(name, model, year)
+    this.numWheels = numWheels;
+  }
+  engineSound(){
+    console.log('RumbleRumble!')
+  }
+}
+
+const car = new Car('BMW', 'X5', 2006, 4);
+console.log(car.name);
+console.log(car.model);
+console.log(car.year);
+console.log(car.numDoors);
+car.honk();
+
+const truck = new Truck('Hummer', 'H2', 2010, 5);
+console.log(truck.name);
+console.log(truck.model);
+console.log(truck.year);
+console.log(truck.numWheels);
+truck.honk();
+
+*/
+
+/*Create a class for a bank account with properties for the account holder's name, account number, and balance. Implement methods for depositing and withdrawing money from the account.
+
+class bankAccount {
+  constructor(holdersName, accountNumber, balance){
+    this.holdersName = holdersName;
+    this.accountNumber = accountNumber;
+    this.balance = balance;
+  }
+
+
+deposit(amount) {
+  this.balance += amount;
+}
+
+withdraw(amount){
+  if(amount < this.balance){
+    this.balance -= amount;
+  } else {
+    console.log('Insufficient funds...what a poor guy')
+  }
+}
+}
+
+const myAccount = new bankAccount('Den', 123123123, 10000);
+console.log(myAccount);
+
+myAccount.deposit(1000);
+console.log(`$ ` + myAccount.balance);
+
+myAccount.withdraw(10000);
+console.log(`$ ` + myAccount.balance);
+
+myAccount.withdraw(2000);
+console.log(`$ ` + myAccount.balance);
+
+*/
+
+/*Create a class for a hotel room reservation system with properties for the room number, number of guests, check-in and check-out dates, and total cost. Implement methods for booking a room, checking the availability of a room, and calculating the total cost of a reservation.
+
+class hotelRoom {
+  constructor(roomNumber, guestsNumber, checkinDate, checkoutDate, totalCost){
+    this.roomNumber = roomNumber;
+    this.guestsNumber = guestsNumber;
+    this.checkinDate = checkinDate;
+    this.checkoutDate = checkoutDate;
+    this.totalCost = totalCost;
+  }
+
+  booking(guests){
+    if(guests < this.guestsNumber){
+      this.roomNumber -= guests;
+      console.log('Your room is ready and ' + freeRooms.roomNumber + ' rooms available');
+    } else {
+      console.log('Sorry, we dont have much space');
+    }
+  } 
+ 
+
+  checking(date){
+    if(date !== this.checkinDate){
+      console.log('This date is free and you can book a room!');
+    } else {
+      console.log('This date is booked');
+    }
+
+  }
+
+  totalCostValue(money){
+    if(money >= this.totalCost){
+      console.log('You can afford it');
+    } else {
+      console.log('You broke man as hell');
+    }
+  }
+}
+const freeRooms = new hotelRoom(20 , 20, '04-2023', '05-2023', 1000);
+//const myRoom = new hotelRoom(1, 2, '03-2023', '04-2023', 1000);
+
+freeRooms.booking(2);
+
+freeRooms.checking('03-2023');
+
+freeRooms.totalCostValue(2000);
+
+*/
+
+//Create a class for a library management system with properties for the library's name, list of books, and number of books. Implement methods for adding and removing books from the library, checking the availability of a book, and searching for a book by title or author.
+
+class libraries {
+  constructor(libName, listOfBooks, numberOfBooks){
+    this.libName = libName;
+    this.listOfBooks = [];
+    this.numberOfBooks = numberOfBooks;
+  }
+
+  addBook(bookName, bookAuthor){
+    this.listOfBooks.push({name: bookName, author: bookAuthor});
+    console.log(bookName, bookAuthor + ' is added to our library');
+  } 
+  
+  
+  removeBook(bookName, bookAuthor){
+    for(let i = 0; i < this.listOfBooks.length; i++){
+    if(this.listOfBooks[i].name === bookName && this.listOfBooks[i].author === bookName, bookAuthor){
+      this.listOfBooks.splice(i, 1);
+      console.log(bookName, bookAuthor + ' is removed from our library')
+    } break;
+  }}
+
+  checkBook(bookName, bookAuthor){
+    for(let i = 0; i < this.listOfBooks.length; i++){
+      if(this.listOfBooks[i].name === bookName && this.listOfBooks[i].author === bookAuthor){
+      console.log('We have your book')
+      break;
+    } 
+  }
+  console.log('We dont have it');
+  }
+
+
+  }
+
+  const books = new libraries('UK Library', [], 5);
+  books.listOfBooks.push({name: 'Book1', author: 'Author1'});
+  
+books.checkBook('Book1', 'Author1');
+books.addBook('Book2','Pushkin');
+
+books.removeBook('Book1', 'Author1');
+
+books.checkBook('Book1', 'Author1');

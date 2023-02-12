@@ -20,16 +20,37 @@ Arrays and Array methods like map, filter, reduce, etc.
 
 +Create an array of numbers and use the reduce method to find the sum of all the numbers.
 
-Create an array of objects representing employees and use the sort method to sort the employees by their names in ascending order.
++Create an array of objects representing employees and use the sort method to sort the employees by their names in ascending order.
 
-Create an array of numbers and use the forEach method to print the square of each number in the array.
++Create an array of numbers and use the forEach method to print the square of each number in the array.
 
-Create an array of strings and use the includes method to check if a certain word is present in the array.
++Create an array of strings and use the includes method to check if a certain word is present in the array.
 
-Create an array of numbers and use the indexOf method to find the first occurrence of a certain number in the array.
++Create an array of numbers and use the indexOf method to find the first occurrence of a certain number in the array.
 
-Create an array of numbers and use the splice method to add a new number to the array.
++Create an array of numbers and use the splice method to add a new number to the array.
 
-Create an array of numbers and use the slice method to create a new array with the first n numbers of the original array.
++Create an array of numbers and use the slice method to create a new array with the first n numbers of the original array.
 
-Create an array of numbers and use the concat method to merge two arrays into a single array.
++Create an array of numbers and use the concat method to merge two arrays into a single array.
+
+---------------------------------------------
+Classes
+---------------------------------------------
++Create a class for a basic shape (e.g. rectangle, square, circle) with properties for its width, height, and area.
+
++Create a class for a person with properties for their name, age, and address.
+
++Create a class for a car with properties for its make, model, year, and color.
+
++Create a class for a bank account with properties for the account holder's name, account number, and balance.
+
++Create a class hierarchy for different types of vehicles (e.g. car, truck, motorcycle) and implement methods for each vehicle type to perform unique actions such as honk, rev engine, pop a wheelie, etc.
+
++Create a class for a bank account with properties for the account holder's name, account number, and balance. Implement methods for depositing and withdrawing money from the account.
+
++Create a class for a hotel room reservation system with properties for the room number, number of guests, check-in and check-out dates, and total cost. Implement methods for booking a room, checking the availability of a room, and calculating the total cost of a reservation.
+
++Create a class for a library management system with properties for the library's name, list of books, and number of books. Implement methods for adding and removing books from the library, checking the availability of a book, and searching for a book by title or author.
+
+Create a class for a student management system with properties for the student's name, ID number, list of courses, and grades. Implement methods for adding and removing courses, calculating the student's GPA, and generating a transcript.
