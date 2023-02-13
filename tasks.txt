@@ -53,4 +53,4 @@ Classes
 
 +Create a class for a library management system with properties for the library's name, list of books, and number of books. Implement methods for adding and removing books from the library, checking the availability of a book, and searching for a book by title or author.
 
-Create a class for a student management system with properties for the student's name, ID number, list of courses, and grades. Implement methods for adding and removing courses, calculating the student's GPA, and generating a transcript.
++Create a class for a student management system with properties for the student's name, ID number, list of courses, and grades. Implement methods for adding and removing courses, calculating the student's GPA, and generating a transcript.
