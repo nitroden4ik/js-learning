@@ -339,7 +339,7 @@ class rectangle {
 }
 */
 
-//Create a class for a person with properties for their name, age, and address.
+/*Create a class for a person with properties for their name, age, and address.
 
 class person {
   constructor(name, age, address){
@@ -358,8 +358,8 @@ class car {
     this.color = color;
   }
 }
-
-//Create a class for a bank account with properties for the account holder's name, account number, and balance.
+*/
+/*Create a class for a bank account with properties for the account holder's name, account number, and balance.
 
 class bankAccount {
   constructor(name, accNumber, balance){
@@ -505,7 +505,7 @@ freeRooms.totalCostValue(2000);
 
 */
 
-//Create a class for a library management system with properties for the library's name, list of books, and number of books. Implement methods for adding and removing books from the library, checking the availability of a book, and searching for a book by title or author.
+/*Create a class for a library management system with properties for the library's name, list of books, and number of books. Implement methods for adding and removing books from the library, checking the availability of a book, and searching for a book by title or author.
 
 class libraries {
   constructor(libName, listOfBooks, numberOfBooks){
@@ -550,3 +550,54 @@ books.addBook('Book2','Pushkin');
 books.removeBook('Book1', 'Author1');
 
 books.checkBook('Book1', 'Author1');
+*/
+
+//Create a class for a student management system with properties for the student's name, ID number, list of courses, and grades. Implement methods for adding and removing courses, calculating the student's GPA, and generating a transcript.
+
+//I'm getting `Your average grade is null` in VS Code... but it runs on playcode.io fine...wtf??
+
+class Students{
+  constructor(name, id, listOfCourses){
+    this.name = name;
+    this.id = id;
+    this.listOfCourses = [];
+ 
+  }
+
+  addCourse(courseName, courseGrade){
+    this.listOfCourses.push({courseName, courseGrade});
+    console.log('Your course is added to the list')
+  }
+
+  removeCourse(courseName){
+    for(let i = 0; i < this.listOfCourses.length; i ++){
+      if(this.listOfCourses[i].courseName === courseName){
+        this.listOfCourses.splice(i ,1);
+        console.log('Course removed');
+        break;
+      }   
+      } 
+      console.log('No such course');
+   
+    }
+  
+
+  averageGrade(){
+    let result = 0;
+    for(let i = 0; i < this.listOfCourses.length; i++){
+      result += this.listOfCourses[i].courseGrade;
+    } 
+    let average = result/this.listOfCourses.length; 
+    console.log(`Your average grade is ${average}`);
+  }
+}
+
+let myCourse = new Students('Den', 111, [] );
+myCourse.addCourse('JavaScript', 3);
+myCourse.addCourse('HTML', 4);
+myCourse.addCourse('CSS', 3);
+
+myCourse.averageGrade(); //getting `Your average grade is null` wtf???
+
+
+console.log(myCourse);
