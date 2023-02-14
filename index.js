@@ -555,7 +555,7 @@ books.checkBook('Book1', 'Author1');
 //Create a class for a student management system with properties for the student's name, ID number, list of courses, and grades. Implement methods for adding and removing courses, calculating the student's GPA, and generating a transcript.
 
 //I'm getting `Your average grade is null` in VS Code... but it runs on playcode.io fine...wtf??
-
+/*
 class Students{
   constructor(name, id, listOfCourses){
     this.name = name;
@@ -601,3 +601,45 @@ myCourse.averageGrade(); //getting `Your average grade is null` wtf???
 
 
 console.log(myCourse);
+
+*/
+
+/*You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that takes the array as an argument and returns this "outlier" N.
+
+function findOutlier(integers){
+  let even = [];
+  let odd = [];
+  for(let i = 0; i < integers.length; i++){
+    if(integers[i] % 2 === 0){
+      even.push(integers[i]);
+      console.log(even)
+    } else {
+      odd.push(integers[i]);
+      console.log(odd)
+    }
+  } return even.length === 1 ? even[0] : odd[0];
+}
+
+findOutlier([1,2,3,4,5,6]);
+
+*/
+//some random task from yt.. seems like I've done it already...
+//sort an array with ascend and descend functions
+const marks = [1,43, 32, 12,13,5,3,2]
+
+function findMin () {
+
+    for(i = 0; i < marks.length; i++){
+      marks.sort((a, b) => a - b)
+      console.log(marks)
+      
+    }
+}
+
+function findMax(){
+  for(i = 0; i < marks.length; i++){
+    marks.sort((a, b) => b - a)
+    console.log(marks)
+    
+  }
+}
